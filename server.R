@@ -84,7 +84,7 @@ shinyServer(
                         ggplot(USD_Year, aes(x=year, y=USD)) + 
                         geom_bar(stat="identity") +
                         xlab("Election Year") +
-                        ylab("NRA donations in millions USD") +
+                        ylab("NRA donations in millions US$") +
                         theme(axis.text.x = element_text(color = "black", size = 15),
                               axis.text.y = element_text(color = "black", size = 15),
                               axis.title.x = element_text(color = "black", size = 18),
@@ -232,7 +232,7 @@ shinyServer(
                                 geom_bar(stat="identity") +
                                 xlab("US State") +
                                 ylab("Individual NRA donations (in thousands)") +
-                                theme(axis.text.x = element_text(color = "black", size = 12, angle = 35),
+                                theme(axis.text.x = element_text(color = "black", size = 12, angle = 45),
                                       axis.text.y = element_text(color = "black", size = 15),
                                       axis.title.x = element_text(color = "black", size = 18),
                                       axis.title.y = element_text(color = "black", size = 18, vjust = 1.5),
@@ -280,7 +280,7 @@ shinyServer(
                                 geom_bar(stat="identity") +
                                 xlab("US State") +
                                 ylab("NRA donations in millions US$") +
-                                theme(axis.text.x = element_text(color = "black", size = 12, angle = 35),
+                                theme(axis.text.x = element_text(color = "black", size = 12, angle = 45),
                                       axis.text.y = element_text(color = "black", size = 15),
                                       axis.title.x = element_text(color = "black", size = 18),
                                       axis.title.y = element_text(color = "black", size = 18, vjust = 1.5),
