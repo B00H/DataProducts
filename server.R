@@ -182,7 +182,7 @@ shinyServer(
                                 geom_path() + 
                                 guides(col=guide_legend(ncol=2)) +
                                 xlab("Election Year") +
-                                ylab("Number of contributions by NRA (in thousands") +
+                                ylab("Number of contributions by NRA (in thousands)") +
                                 theme(axis.title.x = element_text(size=15),
                                       axis.title.y = element_text(size=15),
                                       axis.text.x = element_text(size=12),
