@@ -1,20 +1,26 @@
 library(shiny)
-shinyUI(navbarPage("National Rifle Association Financial Contributions in Election Years \n(2000-2014)",
+shinyUI(navbarPage("Lobbyism in the US: Financial Contributions in Election Years by the National Rifle Association (2000-2014)",
         tabPanel("Introduction",
                         sidebarPanel(
                                 img(src = "everytown.jpeg")
                                 ),
                         mainPanel(
-                                p("The National Rifle Association (NRA) is an American nonprofit organization dedicated to protect the so-called Second Amendment - the right to keep and bear arms."),
-                                p("It is opposed to any kind of gun regulation such as background checks - even though", 
+                                p("Lobbying - trying to influence decisions by members of governments, predominatly legislators - plays a", 
+                                  a("major role in American politics.", 
+                                    href = "http://topics.nytimes.com/top/reference/timestopics/subjects/l/lobbying_and_lobbyists/index.html")),
+                                p("One of the major players is the National Rifle Association (NRA), an American nonprofit organization dedicated to protect the U.S. Constitution's Second Amendment - the right to keep and bear arms."),
+                                p("The NRA is opposed to any kind of gun regulation such as background checks - even though", 
                                   a("the majority of US citizens supports greater gun control.",
                                     href = "http://www.gallup.com/poll/1645/guns.aspx")),
-                                p("The NRA exerts its influence not only through ads such as the most recent campaign against former New York mayor Michael Bloomberg, a billionaire and outspoken lobbyist for more gun control who invests millions of his personal fortune into gun control efforts."),
+                                p("It exerts its influence not only through ads such as the most recent campaign against former New York mayor Michael Bloomberg, a billionaire and outspoken lobbyist for more gun control who invests millions of his personal fortune into gun control efforts."),
                                 p("The NRA also contributes money to political campaign contributions."),
+                                br(),
                                 p("This app visualizes the NRA's financial contributions in election years 2000 through 2014. Some of the plots are interactive, allowing you to explore NRA spending by US state. Use the tabs to navigate."),
                                 p("The data was compiled and published by",
                                   a("National Institute on Money in State Politics.",
                                     href = "http://www.followthemoney.org/")),
+                                br(),
+                                br(),
                                 p(strong("To learn more about gun safety, go to", 
                                        a("everytown.org.", 
                                         href = "http://everytown.org/"))
